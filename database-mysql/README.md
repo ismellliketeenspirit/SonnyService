@@ -34,12 +34,37 @@ npm run build
 
 ### GET
 *Endpoint | http://localhost:3030/product/:(ID)*
-```{"id":"7","vendor_id":17,"price":493,"amz_holds_stock":false,"available_quantity":244,"gift_wrap_available":true,"user_zip":"78726","sold_by":"Velva Zemlak","fulfilled_by":"Velva Zemlak","expected_shipping":"4-5 Days","free_delivery":false}
+``` sh {
+  "id":"7",
+  "vendor_id":17,
+  "price":493,
+  "amz_holds_stock":false,
+  "available_quantity":244,
+  "gift_wrap_available":true,
+  "user_zip":"78726",
+  "sold_by":"Velva Zemlak",
+  "fulfilled_by":"Velva Zemlak",
+  "expected_shipping":"4-5 Days",
+  "free_delivery":false}
 ```
+
+
 
 ### POST
 *Endpoint | http://localhost:3030/product/:(ID)*
-```{"id":"7","vendor_id":17,"price":493,"amz_holds_stock":false,"available_quantity":244,"gift_wrap_available":true,"user_zip":"78726","sold_by":"Velva Zemlak","fulfilled_by":"Velva Zemlak","expected_shipping":"4-5 Days","free_delivery":false}
+``` sh {
+  "id":"7",
+  "vendor_id":17,
+  "price":493,
+  "amz_holds_stock":false,
+  "available_quantity":244,
+  "gift_wrap_available":true,
+  "user_zip":"78726",
+  "sold_by":"Velva Zemlak",
+  "fulfilled_by":"Velva Zemlak",
+  "expected_shipping":"4-5 Days",
+  "free_delivery":false}
+```ted_shipping":"4-5 Days","free_delivery":false}
 ```
 
 ### PUT
