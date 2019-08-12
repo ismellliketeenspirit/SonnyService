@@ -30,10 +30,10 @@ mysql -u root -p
 npm run build
 ```
 
-## API
+# API
 
-### GET
-*Endpoint | http://localhost:3030/product/:(ID)*
+## GET
+*Endpoint | `http://localhost:3030/product/:(ID)*`
 ``` sh {
   "id":"7",
   "vendor_id":17,
@@ -50,8 +50,8 @@ npm run build
 
 
 
-### POST
-*Endpoint | http://localhost:3030/product/:(ID)*
+## POST
+*Endpoint | `http://localhost:3030/product/:(ID)*`
 ``` sh {
   "id":"7",
   "vendor_id":17,
@@ -64,13 +64,13 @@ npm run build
   "fulfilled_by":"Velva Zemlak",
   "expected_shipping":"4-5 Days",
   "free_delivery":false}
-```ted_shipping":"4-5 Days","free_delivery":false}
+  "expected_shipping":"4-5 Days","free_delivery":false}
 ```
 
-### PUT
+## PUT
 *TODO*
 
-### DELETE
+## DELETE
 *TODO*
 
 
