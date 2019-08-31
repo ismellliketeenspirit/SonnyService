@@ -1,10 +1,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require("path");
+const mongoose = require('mongoose');
 // const fs = require("fs");
 const cors = require("cors");
 // const db = require('../database-mysql');
-const routes = require('./api');
+const routes = require('./mongoApi.js');
 
 // CREATE APP INSTANCE
 const app = express();
@@ -23,10 +24,15 @@ const PORT = 3030;
 // MIDDLEWARE
 app.use(routes);
 app.use(express.static(clientDistFolder));
-app.use('/products/:id', express.static(clientDistFolder));
+app.use('/products/', express.static(clientDistFolder));
 
 
 // LISTEN
 app.listen(PORT, () => {
   console.log(`Open http://localhost:${PORT}`);
 });
+
+
+// CONNECT TO MONGOdb
+mongoose.connect('mongodb://localhost/amzn', { useNewUrlParser: true });
+mongoose.Promise = global.Promise;

@@ -119,18 +119,7 @@ db.tx(async (t) => {
 })
   .then(() => {
     let duration = Date.now() - startTime;
-    console.log('TIME: ' + Math.floor(duration / 60000);
+    console.log('TIME: ' + Math.floor(duration / 60000));
     console.log('[Complete]: 1,000,000 records inserted successfully')
   })
   .catch((e) => console.log(e))
-
-
-
-
-// db.one('SELECT name FROM amz.items WHERE id = $1', 1)
-//     .then(user => {
-//         console.log(user.name); // print user name;
-//     })
-//     .catch(error => {
-//         console.log(error); // print the error;
-//     });
